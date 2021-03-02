@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <m:Map Name="Map" CredentialsProvider="0lAtOclKVY3qx34WzZyI~Bw42L0ohdbxV-jTbqJ7QjQ~Ag2LrkNQbGWQl-7kuMy23VWpn_1I9FP5QL0QYNqqLAyaWnJFSlSWhJi8wdL8L4jE" Center="37.806029,-122.407007"/>
+        <m:Map Name="Map" CredentialsProvider="0lAtOclKVY3qx34WzZyI~Bw42L0ohdbxV-jTbqJ7QjQ~Ag2LrkNQbGWQl-7kuMy23VWpn_1I9FP5QL0QYNqqLAyaWnJFSlSWhJi8wdL8L4jE" Center="37.806029,-122.407007">
+            <ComboBox x:Name="cboMunicipalities" Height="48" Margin="592,10,0,0" VerticalAlignment="Top" SelectionChanged="cboMunicipalities_SelectionChanged"/>
+        </m:Map>
     </Grid>
 </Window>

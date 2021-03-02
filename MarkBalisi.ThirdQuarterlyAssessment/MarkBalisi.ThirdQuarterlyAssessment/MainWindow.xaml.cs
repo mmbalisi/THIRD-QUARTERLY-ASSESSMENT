@@ -23,6 +23,45 @@ namespace MarkBalisi.ThirdQuarterlyAssessment
         public MainWindow()
         {
             InitializeComponent();
+            List<string> municipalities = new List<string>()
+            {
+                "Dinalupihan" ,
+                "Davao City" ,
+                "Angeles City" ,
+                "Brooke's Point" ,
+                "Olongapo City" ,
+            };
+
+            cboMunicipalities.ItemsSource = municipalities;
+        }
+
+        private void cboMunicipalities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cboMunicipalities.SelectedIndex == 0)
+            {
+                Map.Center = new Microsoft.Maps.MapControl.Location(14.8781, 120.4546);
+                Map.ZoomLevel = 13;
+            }
+            if (cboMunicipalities.SelectedIndex == 1)
+            {
+                Map.Center = new Microsoft.Maps.MapControl.Location(7.13009927880163, 125.42804470063739);
+                Map.ZoomLevel = 10;
+            }
+            if (cboMunicipalities.SelectedIndex == 2)
+            {
+                Map.Center = new Microsoft.Maps.MapControl.Location(15.160460231120194, 120.60047399746576);
+                Map.ZoomLevel = 13;
+            }
+            if (cboMunicipalities.SelectedIndex == 3)
+            {
+                Map.Center = new Microsoft.Maps.MapControl.Location(8.827339952813013, 117.83041789939554);
+                Map.ZoomLevel = 11;
+            }
+            if (cboMunicipalities.SelectedIndex == 4)
+            {
+                Map.Center = new Microsoft.Maps.MapControl.Location(14.834821290849918, 120.2820978394843);
+                Map.ZoomLevel = 13;
+            }
         }
     }
 }
